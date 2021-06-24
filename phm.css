@@ -1,0 +1,26 @@
+body { counter-reset: h1-counter;}
+h1 {color : blue}
+h1:before {counter-increment: h1-counter; content: counter(h1-counter) ". ";}
+h2 {color : #cd00cd;		/* magenta 3 */}
+h3 {color : blue;}
+h3:before {content: "→ "}
+h4 {color : red;}
+h4:before {content: "◎ "}
+h5 {color : green;}
+h5:before {content: "✓ "}
+
+.rendered_html ul ul {list-style-type: circle;}
+
+.preliminaire {
+    clear: both;
+    padding: 20px;
+    border: thin solid navy;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    color: navy;
+}
+.small{font-size: x-small;}
+.wip{background-color: yellow;}
+.note{ clear: both; border-left: 4px solid navy; border-radius: 4px;
+    float: right; margin: 5px; margin-right:0px; padding: 5px; width: 50%;
+    font-style:oblique; color: navy;}
